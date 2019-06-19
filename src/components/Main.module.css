@@ -1,0 +1,60 @@
+.main{
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-areas:
+            "header"
+            "content";
+    height: 100vh;
+    grid-gap: 10px;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkslategray;
+}
+.header a{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.content{
+    grid-area: content;
+    background: ghostwhite;
+}
+
+
+.tasks_aria{
+    margin: 20px;
+}
+.task{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.task_conteiner{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task_conteiner div{
+    width: 19%;
+}
+
+.add_task_conteiner{
+    padding: 20px;
+
+}
+
+
+.pagination{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.active{
+    color: crimson;
+}
